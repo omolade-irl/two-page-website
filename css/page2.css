@@ -1,0 +1,111 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a:link { text-decoration: none; color: black; }
+nav a:visited { text-decoration: none; color: black;}
+nav a:hover { text-decoration: underline; }
+nav a:active { text-decoration: underline; color: white;}
+
+
+nav{
+    order: 1;
+    flex-basis: 100%;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 5px;
+    margin-left: 50px;
+    font-size: 14px;
+}
+nav a:first-child {
+    margin-right: 10px;
+}
+nav a:last-child {
+    margin-left: 10px;
+}
+
+.content {
+    order: 2;
+    flex: 1;
+    display: block;
+    background-image: url(../img/pic4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50 0%;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 320px;
+    opacity: 0.9;
+    padding: 50px;
+    margin-bottom: 50px;
+    color: white;
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: left;
+    align-items: left;
+}    
+
+.content p{
+    width: 500px;
+    text-align: justify;
+    margin-left:20px;
+}
+.content h1{
+    margin-left: 20px;
+    font-style:italic ;
+}
+
+.video{
+    display:flex;
+    justify-content: center;
+}
+
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:150px;
+}
+table{
+    outline: 3px dashed black;
+    width:350px;
+    padding-top: 10px;
+}
+thead tr th{
+    text-align:center;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-family: Special Elite, sans-serif;
+}
+tbody tr:first-child td{
+    background-color: black;
+    color: gold;
+    padding-left: 15px;
+    text-align: center;
+    font-family: Special Elite, sans-serif;
+}
+tbody tr:nth-child(2) td{
+    padding-left: 15px;
+    text-align: center;
+    font-family: Special Elite, sans-serif;
+}
+tbody tr:last-child td{
+    background-color:black;
+    color: gold;
+    padding-left: 15px;
+    text-align: center;
+    font-family: Special Elite, sans-serif;
+}
+.footer {
+    display: flex;
+    height: 180px;
+    background-color: black;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
